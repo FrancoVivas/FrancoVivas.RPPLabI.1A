@@ -95,13 +95,13 @@ int clientesActivos(eClientes vecClientes[],int tamClientes)
 
 void encabezadoInfoClientes()
 {
-    mensaje("    ID      NOMBRE      APELLIDO      CUIL          CANTIDAD PRESTAMOS ACTIVOS ");
+    printf("    ID      NOMBRE      APELLIDO      CUIL          CANTIDAD PRESTAMOS ACTIVOS ");
 
 }
 
 void encabezadoInfoClientesSaldados()
 {
-    mensaje("    ID      NOMBRE    APELLIDO       CUIL          CANTIDAD PRESTAMOS SALDADOS");
+    printf("    ID      NOMBRE    APELLIDO       CUIL          CANTIDAD PRESTAMOS SALDADOS");
 
 }
 
@@ -309,7 +309,7 @@ int bajaCliente(eClientes vecClientes[],int tamClientes,ePrestamos vecPrestamos[
                 }
 
             }
-            mensaje("\nEl cliente ha sido removido con exito\n");
+            printf("\nEl cliente ha sido removido con exito\n");
 
         }
         else

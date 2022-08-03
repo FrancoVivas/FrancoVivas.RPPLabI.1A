@@ -38,7 +38,7 @@ int main()
             if(clientesActivos(vecClientes,CLIENTESTAM)>0)
                 modCliente(vecClientes,CLIENTESTAM,id,vecPrestamos,PRESTAMOSTAM);
             else
-                mensaje("\nNo hay clientes activos, por lo que no se puede realizar una modificacion.\n");
+                printf("\nNo hay clientes activos, por lo que no se puede realizar una modificacion.\n");
 
             break;
 
@@ -47,7 +47,7 @@ int main()
                 bajaCliente(vecClientes,CLIENTESTAM,vecPrestamos,PRESTAMOSTAM,&id);
             else
 
-                mensaje("\nNo hay clientes activos, por lo que no se puede realizar una baja de cliente.\n");
+                printf("\nNo hay clientes activos, por lo que no se puede realizar una baja de cliente.\n");
 
             break;
         case 4:
@@ -56,7 +56,7 @@ int main()
 
             else
 
-                mensaje("\nNo hay cliente alguno para asignarle un prestamo.\n");
+                printf("\nNo hay cliente alguno para asignarle un prestamo.\n");
 
             break;
         case 5:
@@ -64,20 +64,20 @@ int main()
                 saldarPrestamo(vecPrestamos,PRESTAMOSTAM,id,vecClientes,CLIENTESTAM);
 
             else
-                mensaje("No hay prestamos para saldar");
+                printf("No hay prestamos para saldar");
             break;
         case 6:
             if(clientesActivos(vecClientes,CLIENTESTAM)>0)
                 reanudarPrestamo(vecPrestamos,PRESTAMOSTAM,id,vecClientes,CLIENTESTAM);
             else
-                mensaje("No hay prestamos para reanudar");
+                printf("No hay prestamos para reanudar");
             break;
         case 7:
             if(clientesActivos(vecClientes,CLIENTESTAM)>0)
                 listarClientes(vecClientes,CLIENTESTAM,vecPrestamos,PRESTAMOSTAM);
             else
 
-                mensaje("\nNo hay clientes que imprimir.\n");
+                printf("\nNo hay clientes que imprimir.\n");
 
             break;
 
@@ -88,7 +88,7 @@ int main()
 
             else
 
-                mensaje("No hay prestamos que imprimir\n");
+                printf("No hay prestamos que imprimir\n");
 
             break;
 
@@ -98,7 +98,7 @@ int main()
                 informesClientes(vecClientes,vecPrestamos,CLIENTESTAM,PRESTAMOSTAM);
 
             else
-                mensaje("\nNo se puede realizar ningun informe.(No hay clientes!!)\n");
+                printf("\nNo se puede realizar ningun informe.(No hay clientes!!)\n");
 
 
             break;
@@ -106,7 +106,7 @@ int main()
             if(clientesActivos(vecClientes,CLIENTESTAM)>0 && prestamosActivos(vecPrestamos,PRESTAMOSTAM)>0)
                 informesPrestamos(vecClientes,vecPrestamos,CLIENTESTAM,PRESTAMOSTAM);
             else
-                mensaje("\nNo se puede realizar ningun informe.(No hay clientes!!)\n");
+                printf("\nNo se puede realizar ningun informe.(No hay clientes!!)\n");
 
             break;
 

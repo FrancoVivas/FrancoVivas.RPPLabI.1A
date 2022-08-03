@@ -110,7 +110,7 @@ void clienteMaxPrestamosSaldados(eClientes vecClientes[],ePrestamos vecPrestamos
     }
     else
     {
-        mensaje("\nNo hay prestamos saldados\n");
+        printf("\nNo hay prestamos saldados\n");
     }
 
 }
@@ -122,7 +122,7 @@ void prestamosMayores1000(ePrestamos vecPrestamos[],eClientes vecClientes[],int 
     importe=inputFloat("\nIngrese el importe a buscar: \n");
     while(importe<1000)
     {
-        mensaje("\nDebe ingresar un importe mayor a 1000\n");
+        printf("\nDebe ingresar un importe mayor a 1000\n");
         importe=inputFloat("\nIngrese el importe a buscar: \n");
 
     }
@@ -138,7 +138,7 @@ void prestamosMayores1000(ePrestamos vecPrestamos[],eClientes vecClientes[],int 
 
     if(verifico==-1)
     {
-        mensaje("\nNo se ha encontrado prestamo alguno con el importe indicado.\n");
+        printf("\nNo se ha encontrado prestamo alguno con el importe indicado.\n");
     }
 }
 
@@ -182,7 +182,7 @@ void clienteMaxPrestamosActivos(eClientes vecClientes[],ePrestamos vecPrestamos[
 
     else
     {
-        mensaje("\nNo hay prestamos activos.\n");
+        printf("\nNo hay prestamos activos.\n");
     }
 
 }

@@ -119,17 +119,17 @@ int saldarPrestamo(ePrestamos vecPrestamos[],int tamPrestamos,int prestamoId,eCl
             if(confirm=='s')
             {
                 vecPrestamos[indice].prestamoEstado=SALDADO;
-                mensaje("\nPrestamo saldado con exito\n");
+                printf("\nPrestamo saldado con exito\n");
             }
             else
             {
-                mensaje("\nEl prestamo seguira activo.\n");
+                printf("\nEl prestamo seguira activo.\n");
             }
         }
     }
     else
     {
-        mensaje("No hay prestamos para saldar");
+        printf("No hay prestamos para saldar");
     }
     return indice;
 }
@@ -154,17 +154,17 @@ int reanudarPrestamo(ePrestamos vecPrestamos[],int tamPrestamos,int prestamoId,e
             if(confirm=='s')
             {
                 vecPrestamos[indice].prestamoEstado=ACTIVO;
-                mensaje("\nPrestamo nuevamente activo\n");
+                printf("\nPrestamo nuevamente activo\n");
             }
             else
             {
-                mensaje("\nEl prestamo seguira saldado.\n");
+                printf("\nEl prestamo seguira saldado.\n");
             }
         }
     }
     else
     {
-        mensaje("\nNo hay prestamos para reactivar");
+        printf("\nNo hay prestamos para reactivar");
     }
     return indice;
 }
@@ -336,7 +336,7 @@ int buscarPrestamoActivoId(ePrestamos vecPrestamos[],int tamPrestamos,int* idPre
 
     if(indice==-2)
     {
-        mensaje("Este prestamo ya se encuentra saldado!");
+        printf("Este prestamo ya se encuentra saldado!");
     }
 
     return indice;
@@ -369,12 +369,12 @@ int buscarPrestamoSaldadoId(ePrestamos vecPrestamos[],int tamPrestamos,int* idPr
     }
     if(indice==-1)
     {
-        mensaje("No se ha encontrado el id!\n");
+        printf("No se ha encontrado el id!\n");
     }
 
     if(indice==-2)
     {
-        mensaje("Este prestamo ya se encuentra activo!");
+        printf("Este prestamo ya se encuentra activo!");
     }
 
     return indice;
